@@ -11,26 +11,27 @@ header {
 
 		.title {
 			margin-left: -20%;
-      margin-top: 5%;
-      line-height: 1%;
+			margin-top: 5%;
+			line-height: 1%;
 			p.titleText {
-        font-family: @titleFont;
-        font-size: 5rem;
+				font-family: @titleFont;
+				font-size: 5rem;
+				color: @headerColor;
 			} //close titleText
-
-
 
 			.tagline {
 				font-family: @tagFont;
-        font-size: 3rem;
-
+				font-size: 3rem;
 			} //close tagline
 		} // close title
 		.loginNav {
-			justify-content: space-between;
+			.flex();
+			width: 30%;
+			justify-content: space-evenly;
 			font-size: 2.5rem;
-			padding-left: 40%;
-			margin-left: 5%;
+
+			margin-left: 29%;
+			text-align: center;
 			a {
 				text-decoration: none;
 			} // close a
