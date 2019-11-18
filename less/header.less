@@ -1,15 +1,39 @@
 header {
+	background: @softBlue;
+	height: 20%;
 	.topBar {
-		.logo {
-      img{
-        width: 10%;
-      }
-		} // close logo
+		.flex();
+		justify-content: flex-start;
+		img {
+			width: 30%;
+			padding-top: 10%;
+		} //close img
+
 		.title {
-			h1 {
-				font-family: 'Josefin Sans', sans-serif;
-				font-size: 5rems;
-			}
+			margin-left: -20%;
+      margin-top: 5%;
+      line-height: 1%;
+			p.titleText {
+        font-family: @titleFont;
+        font-size: 5rem;
+			} //close titleText
+
+
+
+			.tagline {
+				font-family: @tagFont;
+        font-size: 3rem;
+
+			} //close tagline
 		} // close title
+		.loginNav {
+			justify-content: space-between;
+			font-size: 2.5rem;
+			padding-left: 40%;
+			margin-left: 5%;
+			a {
+				text-decoration: none;
+			} // close a
+		} //close loginNav
 	} //close topBar
 } // close header
