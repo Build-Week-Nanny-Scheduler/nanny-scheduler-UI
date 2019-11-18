@@ -1,9 +1,35 @@
 .topNav {
-	.flex();
-	justify-content: space-evenly;
-	margin-left: 50%;
-	font-size: 2rem;
-	a {
-		text-decoration: none;
-	} // close a
-} //close nav
+		.flex();
+		justify-content: space-evenly;
+		margin-left: 50%;
+		font-size: 2rem;
+		a {
+			text-decoration: none;
+			@media @500{
+			border: 1px solid black;
+			padding-top: 5%;
+			padding-bottom: 5%;
+			} // close Media for a
+
+		} //close a
+
+
+	@media @500{
+		background: @navMenuColor;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 0;
+		text-align:center;
+		} // close Media for .topNav
+
+	.hiddenMenu {
+		@media @500{
+			margin-left: 50%;
+			} // Close 500 Media for .hiddenMenu
+
+		@media @800 {
+			display: none;
+		} // Close 800 Media for .hiddenMenu
+	} // close .hiddenMenu
+
+} //close .topNav

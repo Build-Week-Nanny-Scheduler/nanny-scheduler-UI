@@ -170,23 +170,49 @@ header .topBar {
   display: flex;
   justify-content: flex-start;
 }
-header .topBar img {
+@media (max-width: 500px) {
+  header .topBar .logoContainer {
+    width: 20%;
+  }
+}
+header .topBar .logoContainer img {
   width: 30%;
   padding-top: 10%;
 }
+@media (max-width: 500px) {
+  header .topBar .logoContainer img {
+    width: 100%;
+  }
+}
 header .topBar .title {
-  margin-left: -20%;
+  margin-left: -10%;
   margin-top: 5%;
   line-height: 1%;
+}
+@media (max-width: 500px) {
+  header .topBar .title {
+    margin-left: 3%;
+    margin-top: 8%;
+  }
 }
 header .topBar .title p.titleText {
   font-family: 'Josefin Sans', sans-serif;;
   font-size: 5rem;
   color: #e7d6b2;
 }
+@media (max-width: 500px) {
+  header .topBar .title p.titleText {
+    font-size: 3rem;
+  }
+}
 header .topBar .title .tagline {
   font-family: 'Arizonia', cursive;;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  header .topBar .title .tagline {
+    display: none;
+  }
 }
 header .topBar .loginNav {
   display: flex;
@@ -199,6 +225,11 @@ header .topBar .loginNav {
 header .topBar .loginNav a {
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  header .topBar .loginNav {
+    display: none;
+  }
+}
 .topNav {
   display: flex;
   justify-content: space-evenly;
@@ -207,6 +238,32 @@ header .topBar .loginNav a {
 }
 .topNav a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .topNav a {
+    border: 1px solid black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .topNav {
+    background: #bbd6e3;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .topNav .hiddenMenu {
+    margin-left: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .topNav .hiddenMenu {
+    display: none;
+  }
 }
 .hero {
   padding-top: 5%;

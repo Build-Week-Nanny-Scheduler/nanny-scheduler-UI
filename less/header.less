@@ -4,37 +4,67 @@ header {
 	.topBar {
 		.flex();
 		justify-content: flex-start;
-		img {
+	.logoContainer{
+		@media @500{
+		width: 20%;
+		} // close Media for .logoContainer
+		 img {
 			width: 30%;
 			padding-top: 10%;
-		} //close img
 
-		.title {
-			margin-left: -20%;
-			margin-top: 5%;
-			line-height: 1%;
-			p.titleText {
-				font-family: @titleFont;
-				font-size: 5rem;
-				color: @headerColor;
+			@media @500 {
+					width: 100%;
+			} //close Media for img
+		} //close img
+	} // close .logoContainer
+
+
+	.title {
+
+		margin-left: -10%;
+
+				margin-top: 5%;
+		line-height: 1%;
+		@media @500{
+margin-left:3%;
+margin-top: 8%;
+
+
+		} //close Media for .title
+
+		p.titleText {
+			font-family: @titleFont;
+			font-size: 5rem;
+			color: @headerColor;
+
+			@media @500 {
+				font-size: 3rem;
+
+				} //close Media for .titleText
 			} //close titleText
 
-			.tagline {
-				font-family: @tagFont;
-				font-size: 3rem;
-			} //close tagline
-		} // close title
-		.loginNav {
-			.flex();
-			width: 30%;
-			justify-content: space-evenly;
-			font-size: 2.5rem;
+		.tagline {
+			font-family: @tagFont;
+			font-size: 3rem;
 
-			margin-left: 29%;
-			text-align: center;
+			@media @500 {
+				display: none;
+			} //close Media for .tagline
+		} //close tagline
+	} // close title
+	.loginNav {
+		.flex();
+		width: 30%;
+		justify-content: space-evenly;
+		font-size: 2.5rem;
+		margin-left: 29%;
+		text-align: center;
 			a {
 				text-decoration: none;
-			} // close a
-		} //close loginNav
+			} // close a for .loginNav
+		@media @500 {
+				display: none;
+		} //close Media for .loginNav // close a
+	} //close loginNav
 	} //close topBar
 } // close header
