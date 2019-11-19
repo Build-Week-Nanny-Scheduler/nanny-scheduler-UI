@@ -5,15 +5,27 @@
 
 	.flex();
 	justify-content: space-evenly;
+	@media @500 {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} // close media for .hero
 
 	.parentImage {
 		width: 30%;
 		text-align: center;
+
+		@media @500 {
+			width: 100%;
+		} // close media for .parentimage
 		p {
 			margin-left: 30%;
 			padding-top: 2%;
 			font-size: 2.5rem;
 			font-weight: bold;
+			@media @500 {
+				padding-right: 50%;
+			} // close media for .parentImage p
 		}
 
 		img {
@@ -25,16 +37,30 @@
 		width: 35%;
 		padding-left: 1%;
 		padding-right: 1%;
+
+		@media @500 {
+			width: 90%;
+			text-align: center;
+		} // close media for .hero p
 	}
 
 	.providerImage {
 		width: 30%;
 		text-align: center;
+		@media @500 {
+			width: 100%;
+			padding-top: 5%;
+		} // close media for  .providerImage
+
 		p {
 			margin-left: 30%;
 			padding-top: 2%;
 			font-size: 2.5rem;
 			font-weight: bold;
+
+			@media @500 {
+				padding-right: 50%;
+			} // close media for .providerImage p
 		}
 
 		img {
@@ -52,6 +78,9 @@
 		width: 30%;
 		margin: 0 auto;
 		padding-bottom: 5%;
+		@media @500 {
+			width: 100%;
+		} // close media for .searchBar form
 	}
 	label {
 		padding-left: 30%;

@@ -274,15 +274,32 @@ header .topBar .loginNav a {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .hero .parentImage {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .hero .parentImage {
+    width: 100%;
+  }
 }
 .hero .parentImage p {
   margin-left: 30%;
   padding-top: 2%;
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .hero .parentImage p {
+    padding-right: 50%;
+  }
 }
 .hero .parentImage img {
   border-radius: 50%;
@@ -293,15 +310,32 @@ header .topBar .loginNav a {
   padding-left: 1%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .hero p {
+    width: 90%;
+    text-align: center;
+  }
+}
 .hero .providerImage {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .hero .providerImage {
+    width: 100%;
+    padding-top: 5%;
+  }
 }
 .hero .providerImage p {
   margin-left: 30%;
   padding-top: 2%;
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .hero .providerImage p {
+    padding-right: 50%;
+  }
 }
 .hero .providerImage img {
   border-radius: 50%;
@@ -314,6 +348,11 @@ header .topBar .loginNav a {
   width: 30%;
   margin: 0 auto;
   padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .searchBar form {
+    width: 100%;
+  }
 }
 .searchBar label {
   padding-left: 30%;
