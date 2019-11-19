@@ -185,7 +185,7 @@ header .topBar .logoContainer img {
   }
 }
 header .topBar .title {
-  margin-left: -10%;
+  margin-left: -20%;
   margin-top: 5%;
   line-height: 1%;
 }
@@ -257,7 +257,9 @@ header .topBar .loginNav a {
 }
 @media (max-width: 500px) {
   .topNav .hiddenMenu {
-    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 @media (min-width: 800px) {
