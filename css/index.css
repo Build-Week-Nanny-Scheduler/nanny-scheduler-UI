@@ -185,7 +185,7 @@ header .topBar .logoContainer img {
   }
 }
 header .topBar .title {
-  margin-left: -10%;
+  margin-left: -20%;
   margin-top: 5%;
   line-height: 1%;
 }
@@ -257,7 +257,9 @@ header .topBar .loginNav a {
 }
 @media (max-width: 500px) {
   .topNav .hiddenMenu {
-    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 @media (min-width: 800px) {
@@ -272,15 +274,32 @@ header .topBar .loginNav a {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .hero .parentImage {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .hero .parentImage {
+    width: 100%;
+  }
 }
 .hero .parentImage p {
   margin-left: 30%;
   padding-top: 2%;
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .hero .parentImage p {
+    padding-right: 50%;
+  }
 }
 .hero .parentImage img {
   border-radius: 50%;
@@ -291,15 +310,32 @@ header .topBar .loginNav a {
   padding-left: 1%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .hero p {
+    width: 90%;
+    text-align: center;
+  }
+}
 .hero .providerImage {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .hero .providerImage {
+    width: 100%;
+    padding-top: 5%;
+  }
 }
 .hero .providerImage p {
   margin-left: 30%;
   padding-top: 2%;
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .hero .providerImage p {
+    padding-right: 50%;
+  }
 }
 .hero .providerImage img {
   border-radius: 50%;
@@ -313,6 +349,12 @@ header .topBar .loginNav a {
   margin: 0 auto;
   padding-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .searchBar form {
+    width: 100%;
+    padding-top: 5%;
+  }
+}
 .searchBar label {
   padding-left: 30%;
 }
@@ -320,10 +362,20 @@ header .topBar .loginNav a {
   width: 50%;
   margin-left: 30%;
 }
+@media (max-width: 500px) {
+  .searchBar input {
+    margin-left: 25%;
+  }
+}
 .searchBar button {
   width: 20%;
   margin-left: 45%;
   margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .searchBar button {
+    margin-left: 38%;
+  }
 }
 footer {
   background: #b2c3e7;
@@ -341,4 +393,15 @@ footer .footerNav a {
   text-decoration: none;
   padding-left: 1%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  footer .footerNav a {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerNav {
+    width: 100%;
+    padding-top: 5%;
+  }
 }
