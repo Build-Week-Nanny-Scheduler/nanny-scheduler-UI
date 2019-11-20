@@ -385,6 +385,29 @@ header .topBar .loginNav a {
     margin-left: 38%;
   }
 }
+.teamIntro {
+  margin: 0, auto;
+}
+.teamWrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  align-content: start;
+}
+.teamWrapper .teamWall {
+  width: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+.teamWrapper .teamWall img {
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 footer {
   background: #b2c3e7;
   text-align: center;
