@@ -348,6 +348,7 @@ header .topBar .loginNav a {
   width: 30%;
   margin: 0 auto;
   padding-bottom: 5%;
+  margin-right: 37%;
 }
 @media (max-width: 500px) {
   .searchBar form {
@@ -356,7 +357,8 @@ header .topBar .loginNav a {
   }
 }
 .searchBar label {
-  padding-left: 30%;
+  padding-left: 32%;
+  padding-bottom: 2%;
   font-size: 1.5em;
 }
 .searchBar input {
@@ -379,6 +381,7 @@ header .topBar .loginNav a {
   border: 1px solid #000;
   color: #fff;
   font-family: 'Arizonia', cursive;;
+  margin-left: 40%;
 }
 @media (max-width: 500px) {
   .searchBar button {
