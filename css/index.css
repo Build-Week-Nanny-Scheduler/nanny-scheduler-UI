@@ -175,6 +175,11 @@ header .topBar {
     width: 20%;
   }
 }
+@media (max-width: 1000px) {
+  header .topBar .logoContainer {
+    width: 100%;
+  }
+}
 header .topBar .logoContainer img {
   width: 30%;
   padding-top: 10%;
@@ -184,15 +189,29 @@ header .topBar .logoContainer img {
     width: 100%;
   }
 }
+@media (max-width: 1000px) {
+  header .topBar .logoContainer img {
+    margin-top: 73%;
+    height: 50%;
+    width: 50%;
+  }
+}
 header .topBar .title {
   margin-left: -20%;
-  margin-top: 5%;
+  margin-top: 3%;
   line-height: 1%;
 }
 @media (max-width: 500px) {
   header .topBar .title {
     margin-left: 3%;
     margin-top: 8%;
+  }
+}
+@media (max-width: 1000px) {
+  header .topBar .title {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
   }
 }
 header .topBar .title p.titleText {
@@ -217,13 +236,21 @@ header .topBar .title .tagline {
 header .topBar .loginNav {
   display: flex;
   width: 30%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: 2.5rem;
   margin-left: 29%;
   text-align: center;
 }
 header .topBar .loginNav a {
   text-decoration: none;
+}
+@media (max-width: 1000px) {
+  header .topBar .loginNav a {
+    padding-left: 0%;
+    padding-right: 30%;
+    margin-left: 10%;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   header .topBar .loginNav {
