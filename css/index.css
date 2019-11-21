@@ -178,6 +178,7 @@ header .topBar {
 @media (max-width: 1000px) {
   header .topBar .logoContainer {
     width: 100%;
+    padding-bottom: 1%;
   }
 }
 header .topBar .logoContainer img {
@@ -198,7 +199,7 @@ header .topBar .logoContainer img {
 }
 header .topBar .title {
   margin-left: -20%;
-  margin-top: 3%;
+  margin-top: 2%;
   line-height: 1%;
 }
 @media (max-width: 500px) {
@@ -212,6 +213,7 @@ header .topBar .title {
     margin-top: 10%;
     width: 100%;
     text-align: center;
+    pading-bottom: 5%;
   }
 }
 header .topBar .title p.titleText {
@@ -258,10 +260,16 @@ header .topBar .loginNav a {
   }
 }
 .topNav {
-  display: flex;
+  background: [object Object];
   justify-content: space-evenly;
   margin-left: 50%;
   font-size: 2rem;
+  padding-top: 2%;
+}
+@media (max-width: 1000px) {
+  .topNav {
+    margin-left: 0;
+  }
 }
 .topNav a {
   text-decoration: none;
@@ -271,6 +279,11 @@ header .topBar .loginNav a {
     border: 1px solid black;
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .topNav a {
+    padding-right: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -415,6 +428,12 @@ header .topBar .loginNav a {
     margin-left: 38%;
   }
 }
+@media (max-width: 1000px) {
+  .searchBar button {
+    width: 50%;
+    margin-left: 30%;
+  }
+}
 .teamIntro {
   margin: 0, auto;
 }
@@ -440,6 +459,7 @@ header .topBar .loginNav a {
   border-radius: 50%;
 }
 footer {
+  padding-top: 2%;
   background: #b2c3e7;
   text-align: center;
 }
@@ -459,6 +479,11 @@ footer .footerNav a {
 @media (max-width: 500px) {
   footer .footerNav a {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  footer .footerNav a {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {

@@ -1,15 +1,26 @@
 .topNav {
-	.flex();
+	background: .flex();
 	justify-content: space-evenly;
 	margin-left: 50%;
 	font-size: 2rem;
+	padding-top: 2%;
+
+	@media @1000 {
+		margin-left: 0;
+	} //close media 1000 for .topNav
 	a {
 		text-decoration: none;
 		@media @500 {
 			border: 1px solid black;
 			padding-top: 5%;
 			padding-bottom: 5%;
-		} // close Media for a
+		} // close Media 500 for a
+
+		@media @1000 {
+			padding-right:5%;
+
+
+		} // close media 1000 for a
 	} //close a
 
 	@media @500 {
