@@ -26,7 +26,7 @@
 			@media @500 {
 				padding-right: 50%;
 			} // close media for .parentImage p
-		}
+		} // close .parentImage p
 
 		img {
 			border-radius: 50%;
@@ -34,7 +34,6 @@
 		} // close image
 	} // close parentImage
 	p {
-
 		width: 35%;
 		padding-left: 1%;
 		padding-right: 1%;
@@ -43,7 +42,7 @@
 			width: 90%;
 			text-align: center;
 		} // close media for .hero p
-	}
+	} // close .hero p
 
 	.providerImage {
 		width: 30%;
@@ -62,7 +61,7 @@
 			@media @500 {
 				padding-right: 50%;
 			} // close media for .providerImage p
-		}
+		} // close .hero.providerImage p
 
 		img {
 			border-radius: 50%;
@@ -79,16 +78,18 @@
 		width: 30%;
 		margin: 0 auto;
 		padding-bottom: 5%;
-		margin-right:37%;
+		margin-right: 37%;
 		@media @500 {
 			width: 100%;
 			padding-top: 5%;
 		} // close media for .searchBar form
 	}
 	label {
-		padding-left: 32%;
-		padding-bottom:2%;
+		width: 50%;
+		margin-left: 30%;
+		padding-bottom: 2%;
 		font-size: 1.5em;
+		text-align: center;
 	}
 	input {
 		width: 50%;
@@ -97,19 +98,23 @@
 		padding-bottom: 2%;
 		@media @500 {
 			margin-left: 25%;
+			font-size: 1rem;
 		} // close media for input
+		@media @1000 {
+			font-size: 0.9rem;
+		}
 	}
 	button {
 		.button(30%, @softPurple, @tagFont);
 		margin-left: 40%;
-		@media @500 {
-			margin-left: 38%;
-		} // close media for button
 
-		@media @1000{
-width:50%;
-margin-left:30%;
-		}
+		@media @1000 {
+			width: 50%;
+			margin-left: 30%;
+		} //close 1000 for button class
+		@media @500 {
+			margin-left: 25%;
+		} // close media for button
 	}
 }
 
@@ -138,7 +143,6 @@ margin-left:30%;
 			height: auto;
 			border: 1px solid black;
 			border-radius: 50%;
-
 		}
 	}
 }

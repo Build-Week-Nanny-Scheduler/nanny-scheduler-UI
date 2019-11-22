@@ -1,7 +1,12 @@
 footer {
 	padding-top: 2%;
+	padding-bottom: 0.5%;
 	background: @softBlue;
 	text-align: center;
+	@media @500 {
+		width: 70%;
+		margin-left: 15%;
+	}
 
 	.footerNav {
 		text-align: center;
@@ -26,6 +31,6 @@ footer {
 		@media @500 {
 			width: 100%;
 			padding-top: 5%;
-		} // close media for .footernav
-	}
-}
+		} // close 500 for .footernav
+	} // close .footerNav
+} // close footer
