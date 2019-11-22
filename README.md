@@ -21,7 +21,7 @@ The following programs and setups were used for this project:
 
 ## Meet the Team
 
-All links direct to the repo related to this project, with the exception of the Team Lead, whose link directs to his GitHub profile.
+
 
 -   **Marina Baskova** - Team Lead
 -   **Michael Phelps** - UI Developer
