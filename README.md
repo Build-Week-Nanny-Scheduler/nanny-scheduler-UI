@@ -1,3 +1,4 @@
+
 # Nanny in a Flash
 
 The Marketing Front Page for the Nanny in a Flash Application.
@@ -29,11 +30,5 @@ All links direct to the repo related to this project, with the exception of the 
 -   **Anthony Kizer** - Front-end Dev
 -   **Amber Sorensen** - Back-end Dev
 
-## I want to help!!
 
-If you have styling suggestions, or extra info you think should be added to the website, feel free to make any changes:
 
--   Clone and Download the repository
--   Change any files with necessary content
--   Submit a Pull Request
-    -   Please add the Noise Controller Team as Reviewers, so we can review your content before merging the pull request.
