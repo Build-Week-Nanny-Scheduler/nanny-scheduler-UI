@@ -4,67 +4,87 @@ header {
 	.topBar {
 		.flex();
 		justify-content: flex-start;
-	.logoContainer{
-		@media @500{
-		width: 20%;
-		} // close Media for .logoContainer
-		 img {
-			width: 30%;
-			padding-top: 10%;
-
+		.logoContainer {
+			@media @1000 {
+				width: 100%;
+				padding-bottom: 1%;
+			} //close 1000 media for .logoContainer
 			@media @500 {
+				width: 20%;
+			} // close 500 Media for .logoContainer
+			img {
+				width: 30%;
+				padding-top: 10%;
+				@media @1000 {
+					margin-top: 73%;
+					height: 50%;
+					width: 50%;
+				} // close 1000 media for img
+				@media @500 {
 					width: 100%;
-			} //close Media for img
-		} //close img
-	} // close .logoContainer
+				} //close 500 Media for img
+			} //close img
+		} // close .logoContainer
 
+		.title {
+			margin-left: -20%;
 
-	.title {
+			margin-top: 2%;
+			line-height: 1%;
 
-		margin-left: -20%;
-
+			@media @1000 {
 				margin-top: 5%;
-		line-height: 1%;
-		@media @500{
-margin-left:3%;
-margin-top: 8%;
-
-
-		} //close Media for .title
-
-		p.titleText {
-			font-family: @titleFont;
-			font-size: 5rem;
-			color: @headerColor;
-
+				width: 100%;
+				text-align: center;
+				pading-bottom: 5%;
+			} // close 1000 media for .title
 			@media @500 {
+				margin-left: 3%;
+				margin-top: 8%;
+			} //close 500 Media for .title
+
+			p.titleText {
+				font-family: @titleFont;
+				font-size: 5rem;
+				color: @headerColor;
+
+				@media @500 {
+					font-size: 3rem;
+				} //close Media for .titleText
+				@media @1000 {
+				}
+			} //close p.titleText
+
+			.tagline {
+				font-family: @tagFont;
 				font-size: 3rem;
 
-				} //close Media for .titleText
-			} //close titleText
-
-		.tagline {
-			font-family: @tagFont;
-			font-size: 3rem;
-
-			@media @500 {
-				display: none;
-			} //close Media for .tagline
-		} //close tagline
-	} // close title
-	.loginNav {
-		.flex();
-		width: 30%;
-		justify-content: space-evenly;
-		font-size: 2.5rem;
-		margin-left: 29%;
-		text-align: center;
+				@media @500 {
+					display: none;
+				} //close 500 Media for .tagline
+			} //close .tagline
+		} // close .title
+		.loginNav {
+			.flex();
+			width: 30%;
+			justify-content: space-around;
+			font-size: 2.5rem;
+			margin-left: 29%;
+			text-align: center;
 			a {
 				text-decoration: none;
-			} // close a for .loginNav
-		@media @500 {
+
+				@media @1000 {
+					padding-left: 0%;
+					padding-right: 10%;
+					margin-left: 10%;
+
+					text-align: left;
+				} // close 1000 media for a
+			} // close .loginNav a
+			@media @500 {
 				display: none;
-		} //close Media for .loginNav // close a
-	} //close loginNav
-	} //close topBar
+			} //close 500 Media for .loginNav
+		} //close .loginNav
+	} //close .topBar
 } // close header
